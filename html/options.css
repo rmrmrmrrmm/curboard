@@ -1,0 +1,46 @@
+.container {
+  padding: 0 40%;
+}
+#cssselector {
+  margin: 1em auto;
+}
+#cssselector .inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#cssselector p {
+  font-size: 16px;
+}
+#cssselector p.label {
+  flex: 1 1 auto;
+}
+#cssselector p.value {
+  flex: 1 1 auto;
+  text-align: right;
+}
+#cssselector input.slider {
+  width: 100%;
+  display: block;
+}
+#cssselector input.picker {
+  width: 100%;
+  display: block;
+}
+#cssselector input.textform {
+  width: 100%;
+  display: block;
+}
+#buttoncontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#buttoncontainer button {
+  flex: 1 1 auto;
+  margin: 1em;
+}
+
+#samplecontainer {
+  text-align: center;
+}

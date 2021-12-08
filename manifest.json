@@ -1,0 +1,38 @@
+{
+  "name": "curboard",
+  "description": "extension for browsing with keyboard",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "/background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "commands": {
+    "jump": {
+      "description": "open URL",
+      "suggested_key": {
+        "default": "Alt+J"
+      }
+    },
+    "new": {
+      "description": "open URL in a new tab",
+      "suggested_key": {
+        "default": "Alt+N"
+      }
+    },
+    "button": {
+      "description": "click button or focus input box",
+      "suggested_key": {
+        "default": "Alt+B"
+      }
+    }
+  },
+  "icons": {
+    "16": "/images/curboard16.png",
+    "32": "/images/curboard32.png",
+    "48": "/images/curboard48.png",
+    "128": "/images/curboard128.png"
+  },
+  "options_page": "/html/options.html"
+}
